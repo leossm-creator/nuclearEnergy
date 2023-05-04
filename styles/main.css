@@ -1,0 +1,262 @@
+.container {
+  background-color: #222;
+  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll; */
+}
+
+#scrollSpy .active {
+  color: whitesmoke !important;
+}
+
+.page {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  /* overflow: hidden !important; */
+}
+
+#nav {
+  z-index: 999;
+}
+
+.nav-title {
+  padding-right: 20px;
+}
+
+#globe {
+  cursor: move;
+  width: 100%;
+  height: 500px;
+}
+
+#current {
+  position: absolute;
+}
+
+#stickyNav {
+  position: absolute;
+  z-index: 999;
+  margin-left: 75px;
+}
+
+#intro {
+  z-index: -1;
+}
+
+.fab {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 99;
+}
+
+.card {
+  background-color: #588157;
+  color: #14213d !important;
+}
+
+.scrollable {
+  /* width: 100%;
+  height: 100%; */
+}
+
+.full_page {
+  height: 100vh;
+  width: 100%;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+
+.text_over {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 500px;
+  color: #ffffff;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text_over h1 {
+  color: #f0f0f0;
+}
+
+.text_over p {
+  color: #f0f0f0;
+}
+
+.text_over .uk-text-lead {
+  color: #fca311;
+}
+
+.img_txt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.img_txt .fp-overflow {
+  display: flex;
+}
+
+.img_txt .img {
+  width: 50%;
+  height: 100vh;
+}
+
+.img_txt .txt_container {
+  width: 50%;
+  height: calc(100% - 60px);
+  padding: 30px;
+  /* overflow-y: hidden; */
+  background-color: #dcdcdc;
+}
+
+.sec_container {
+  /* display: flex; */
+  width: calc(100% - 120px);
+  height: calc(100% - 160px);
+  padding: 80px 60px;
+  margin-left: 0 !important;
+}
+
+.sec_container .uk-first-column {
+  padding-left: 0;
+}
+
+.textBox {
+  /* width: 50%; */
+}
+
+.chartBox {
+  background-color: rgba(20, 33, 61, 0.1);
+
+  height: 100%;
+}
+
+.chartBox .viz_charts {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+.boxquote {
+  position: absolute;
+  z-index: 1;
+  font-family: 'Joan', serif;
+  /* background-color: #fca311; */
+  color: whitesmoke !important;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.boxquote p {
+  max-width: 1000px;
+  font-size: 28px;
+  padding: 60px;
+}
+
+.icons {
+  margin-right: 12px;
+}
+
+.scrollable {
+  height: fit-content;
+  width: 100%;
+}
+
+.page[data-anchor='nuclearEnergy'] .heading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 64px !important;
+  color: #e1ecff;
+  text-shadow: 1px 1px 3px #4e4e4e;
+  /* font-family: 'Joan', serif; */
+  max-width: 1000px;
+  text-align: center;
+}
+
+.page[data-anchor='nuclearEnergy'] .uk-first-column {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.page[data-anchor='nuclearEnergy'] .uk-first-column .uk-card {
+  height: fit-content;
+}
+
+#modalBtn {
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  border-radius: 100%;
+}
+
+#footer {
+  background-color: rgb(44, 44, 44);
+}
+
+strong {
+  /* color: whitesmoke; */
+  font-weight: bold;
+}
+
+.fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.uk-notification {
+  width: 400px !important;
+}
+
+.uk-notification-message {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 8px;
+  color: rgba(252, 163, 17, 1);
+  font-size: 1rem;
+  width: 400px !important;
+}
+
+.uk-notification-bottom-center {
+  margin-bottom: 15px !important;
+  z-index: 0;
+  margin-left: -200px !important;
+}
+
+.scrollable {
+  width: 100%;
+  height: 100vh;
+}
+
+/* fullPage customisation */
+
+.fp-overflow {
+  /* overflow: hidden !important; */
+}
+
+.fp-slidesNav {
+  display: flex;
+  justify-content: center;
+}
+
+.fp-watermark {
+  display: none !important;
+}

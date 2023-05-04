@@ -1,0 +1,5 @@
+﻿Entity,Safeness,Reliability,Development,Cleanliness,Cost
+Nuclear,5,5,5,4,1
+Solar,5,2,1,1,5
+Wind,5,2,1,4,3
+Hydropower,5,2,1,4,1

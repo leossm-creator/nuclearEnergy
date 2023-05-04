@@ -1,0 +1,8 @@
+Entity,Deaths per TWh,Capacity Factor (%),Current Share in Production (%),GHG Emissions (tonnes CO2e/GWh),Overnight costs (USD/kWe)
+Hydropower,0.0235,37.1,0.292,26,3586
+Nuclear,0.071,92.7,12.069,29,3606
+Solar,0.019,24.6,1.248,85,1126
+Wind,0.035,34.6,0.237,26,2373
+Coal,24.62,49.3,25.697,888,1897
+Natural Gas,2.821,54.4,17.301,499,1174
+Oil,18.43,16.4,41.602,733, 	
