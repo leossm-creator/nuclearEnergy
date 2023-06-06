@@ -1,9 +1,9 @@
-var path_1 = "assets/data/energy_consumption_by_source_korea.csv";
-var path_2 = "assets/data/share_energy_by_source_korea.csv";
-var path_3 = "assets/data/death-rates-from-energy-production-per-twh.csv";
-var path_4 = "assets/data/radar_points.csv";
-var path_5 = "assets/data/co2_emission_by_source.csv";
-var path_6 = "assets/data/capacity-factor.csv";
+var path_1 = "assets/data/energy_consumption_by_source_korea.CSV";
+var path_2 = "assets/data/share_energy_by_source_korea.CSV";
+var path_3 = "assets/data/death-rates-from-energy-production-per-twh.CSV";
+var path_4 = "assets/data/radar_points.CSV";
+var path_5 = "assets/data/co2_emission_by_source.CSV";
+var path_6 = "assets/data/capacity-factor.CSV";
 
 var config = { responsive: true };
 

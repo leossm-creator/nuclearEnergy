@@ -1,5 +1,5 @@
 const GLOBE_IMAGE_URL = "//cdn.jsdelivr.net/npm/three-globe/example/img/earth-dark.jpg";
-const GREENHOUSE_API = "assets/data/world_carbon_emission.json";
+const GREENHOUSE_API = "assets/data/world_carbon_emission.JSON";
 const GEOJSON_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson";
 const colourScale = d3.scaleSequential(d3.interpolateLab("green", "red"))
 const altitude = 0.0063;
