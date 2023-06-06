@@ -179,15 +179,7 @@
 }
 
 .page[data-anchor='nuclearEnergy'] .heading {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 64px !important;
-  color: #e1ecff;
-  text-shadow: 1px 1px 3px #4e4e4e;
-  /* font-family: 'Joan', serif; */
-  max-width: 1000px;
-  text-align: center;
+
 }
 
 .page[data-anchor='nuclearEnergy'] .uk-first-column {

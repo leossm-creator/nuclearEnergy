@@ -19,7 +19,7 @@ $(document).ready(function () {
     // css3: true,
     controlArrows: false,
     menu: "#scrollSpy",
-    anchors: ["intro", "globeVis", "netZero", "carbonNeutrality", "quote", "nuclearEnergy", "eval", "conc"],
+    anchors: ["intro", "globeVis", "netZero", "carbonNeutrality", "quote", "nuclearEnergy_intro", "nuclearEnergy", "eval", "conc"],
     licenseKey: 'gplv3-license',
     slidesNavigation: true,
 
@@ -28,11 +28,11 @@ $(document).ready(function () {
     onLeave: function (origin, destination, direction) {
       // console.log('Index: ' + origin.index + ' Slide Index: ' + slideIndexS);
 
-      if (origin.index === 5 && !sliding) {
-        if (direction === 'down' && slideIndexS < 5) {
+      if (origin.index === 6 && !sliding) {
+        if (direction === 'down' && slideIndexS < 4) {
           fullpage_api.moveSlideRight();
           return false;
-        } else if (direction === "down" && slideIndexS == 5) {
+        } else if (direction === "down" && slideIndexS == 4) {
 
         } else if (direction === 'up' && slideIndexS > 1) {
           fullpage_api.moveSlideLeft();
