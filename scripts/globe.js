@@ -142,7 +142,7 @@ let countries;
 let featureCollection;
 
 async function getData() {
-  world_co2_json = await request("assets/data/world_carbon_emission.json");
+  world_co2_json = await request("assets/data/world_carbon_emission.JSON");
   // console.log("world_co2_json", world_co2_json);
 
   featureCollection = (await request(GEOJSON_URL)).features;
