@@ -1,6 +1,6 @@
-import "/scripts/globe.js";
-import "/scripts/plot.js";
-import "/scripts/aos.js";
+import "./scripts/globe.js";
+import "./scripts/plot.js";
+import "./scripts/aos.js";
 
 import { initGlobe } from "./scripts/globe.js";
 
