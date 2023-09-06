@@ -1,3 +1,11 @@
+h1 {
+  font-size: 82px;
+}
+
+p {
+  font-size: 18px;
+}
+
 .title_box {
   position: absolute;
   display: flex;

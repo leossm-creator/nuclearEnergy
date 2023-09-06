@@ -16,9 +16,9 @@ const initGlobe = async () => {
     .globeImageUrl(GLOBE_IMAGE_URL)
     .showGraticules(false)
     .polygonAltitude(nation => extrudeCountries(nation))
-    .backgroundColor("#14213d")
+    .backgroundColor("whitesmoke")
     .showAtmosphere(true)
-    .atmosphereColor("whitesmoke")
+    .atmosphereColor("#14213d")
     .atmosphereAltitude("0.25")
     .polygonCapColor(nation => colourCountries(nation))
     .polygonSideColor(nation => colourSides(nation))
@@ -53,6 +53,8 @@ const initGlobe = async () => {
   }, 0);
 
   await getData();
+
+  console.log("data received")
 
   await window.addEventListener("resize", () => {
     world.width(window.innerWidth);
@@ -323,16 +325,13 @@ function animateTimescale() {
       animateTimescale();
     } else {
       setTimeout(function () {
-        UIkit.modal($("#modal"), {}).show();
+        // UIkit.modal($("#modal"), {}).show();
+        UIkit.notification({ message: '<span uk-icon="icon: world" class="icons"></span>Drag and hover to view details of each nations', pos: "bottom-center", timeout: 0 })
       }, 400);
     }
   }, 50);
 }
 
-UIkit.util.on($("#modal"), 'hidden', (e) => {
-  UIkit.notification.closeAll();
-  UIkit.notification({ message: '<span uk-icon="icon: world" class="icons"></span>Drag and hover to view details of each nations', pos: "bottom-center", timeout: 0 })
-})
 
 export { initGlobe };
 

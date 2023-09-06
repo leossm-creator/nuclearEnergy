@@ -42,9 +42,7 @@ const getEnergyConsumpitonData = (data) => {
   props.forEach((item) => {
     if (!sources[item]) {
       let col = '';
-      if (item == "Total") {
-        col=""
-      } else if (item == "Nuclear") {
+      if (item == "Nuclear") {
         col = "rgba(252, 163, 17, 0.5)";
       } else {
         col = "";
@@ -55,7 +53,7 @@ const getEnergyConsumpitonData = (data) => {
         name: '',
         type: 'scatter',
         hovertemplate: '%{y:.2f} TWh',
-        fill: 'tozeroy',
+        fill: 'line',
         // stackgroup: 'one',
         // fillcolor: col,
         line: {
@@ -109,6 +107,7 @@ const getShareEnergyData = (data) => {
         }
       }
     },
+    
     showlegend: true,
     barmode: "stack",
     font: {
@@ -118,6 +117,12 @@ const getShareEnergyData = (data) => {
   const sources = {};
   props.forEach((item) => {
     if (!sources[item]) {
+      let col = "";
+      if (item == "Nuclear") {
+        col = "rgba(252, 163, 17, 0.5)";
+      } else {
+        col = "";
+      }
       sources[item] = {
         x: [],
         y: [],
@@ -126,6 +131,9 @@ const getShareEnergyData = (data) => {
         mode: 'lines',
         fill: 'tozeroy',
         hovertemplate: '%{y:.2f}%',
+        line: {
+          color: col,
+        },
       }
     }
 
@@ -161,23 +169,22 @@ const getDeathRateData = (data) => {
       y: [],
       mode: 'markers',
       name: '',
-      text: [],
+      text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
       marker: {
-        size: "10",
+        size: [],
       },
       hovertemplate: '%{y:.2f} deaths, %{x:.2f}TWh',
       hoverinfo: "",
     }
-    // if (item["Entity"] == "Nuclear") {
-    //   trace.marker.color = "rgba(222,45,38,0.8)"
-    // } else {
-    //   // trace.marker.color = "rgb(72, 99, 103)"
-    // }
+    if (item["Entity"] == "Nuclear") {
+      trace.marker.color = "rgba(252, 163, 17, 0.7)"
+    } else {
+    }
     trace.name = item["Entity"];
     trace.text.push(item["Entity"]);
-    trace.x.push(item["Consumption - TWh"]);
+    trace.x.push(item["GHG emission"]);
     trace.y.push(item["Deaths per TWh"]);
-    // trace.marker.size = 5 + (item["Consumption - TWh"] * 0.075);
+    trace.marker.size.push( 5 + (item["Consumption - TWh"] * 0.075));
     dataSet.push(trace);
   })
 
@@ -202,13 +209,15 @@ const getDeathRateData = (data) => {
     xaxis: {
       title: {
         standoff: 30,
-        text: 'Current Energy Production (TWh)',
+        text: 'GHG emission (gCO2 equivalent per KWh)',
         font: {
           // color: '#7f7f7f'
         }
       },
     },
   };
+
+  // Current Energy Production in 2020 (TWh)
 
   Plotly.newPlot('viz_sft', dataSet, layout, config);
 }
@@ -252,7 +261,7 @@ const getCo2BySource = (data) => {
     type: 'bar',
     name: '',
     marker: {
-      color: ['rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)', 'rgba(222,45,38,0.8)', 'rgba(72, 99, 103,1)']
+      color: ['rgba(20,33,61,0.6)', 'rgba(20,33,61,0.6)', "rgba(20,33,61,0.6)", 'rgba(20,33,61,0.6)', 'rgba(20,33,61,0.6)', 'rgba(252, 163, 17, 0.7)', 'rgba(20,33,61,0.6)']
     },
     orientation: "h",
     // hovermode: 'closest'
@@ -309,7 +318,7 @@ const getCapacityFactor = (data) => {
     type: 'bar',
     name: '',
     marker: {
-      color: ['rgba(222,45,38,0.8)', 'rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)', 'rgba(72, 99, 103,1)']
+      color: ['rgba(252, 163, 17, 0.7)', 'rgba(20,33,61,0.6)', "rgba(20,33,61,0.6)", 'rgba(20,33,61,0.6)', 'rgba(20,33,61,0.6)', 'rgba(20,33,61,0.6)', 'rgba(20,33,61,0.6)', 'rgba(20,33,61,0.6)']
     },
     orientation: "v",
     hovertemplate: '%{y:.1f}%',

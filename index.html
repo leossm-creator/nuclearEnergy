@@ -29,7 +29,7 @@
   <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 
   <!-- fullPage.js -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css"
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css"
     integrity="sha512-Go0fX6Al6Eab+N7QbSFHYBpwdcU2rbfONUcbRIS4z+9yzLlj7Xj8ao2BAOPE9Qtxdl+7iq04xzzcF4OTOWoUWg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/vendors/easings.min.js"
@@ -37,7 +37,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
     integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
   <!-- noUIslider-->
   <script src='./libraries/nouislider.min.js'></script>
@@ -68,6 +68,7 @@
       <span uk-navbar-toggle-icon></span>
     </a>
   </div>
+
   <div id="offcanvas-nav" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">
       <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -97,21 +98,33 @@
       </ul>
     </div>
   </div>
+
   <div id="container">
-    <div class="page uk-background-cover" data-anchor="intro" uk-img data-src="assets/img/power_plants.jpg">
+    <div class="full_page uk-background-cover" data-anchor="intro" uk-img data-src="assets/img/power_plants.jpg">
       <div class="title_box">
         <h1 class="uk-text-bold article_heading">Why Nuclear Energy is <br> crucial in achieving <br> Carbon Neutrality
         </h1>
-        <p class="article_info">Written by <a href="https://github.com/leossm-creator" style="margin: 0 4px">Leo
+        <p class="article_info">Written by <a href="https://leopark.myportfolio.com/" style="margin: 0 4px">Leo
             Park</a>
           on
-          5 June 2022. Uploaded on <a href="https://github.com/leossm-creator"><span uk-icon="icon: github; ratio: 0.85"
-              style="margin-left:4px;"></span>Github</a>
+          5 June 2022. Uploaded on <a href="https://github.com/leossm-creator/nuclearEnergy/tree/master"><span
+              uk-icon="icon: github; ratio: 0.85" style="margin-left:4px;"></span>Github</a>
         </p>
       </div>
     </div>
 
-    <div data-anchor="globeVis" class="page" id="globeCtn">
+    <div class="text_box">
+      <p>
+        <span class="dropcap">C</span>limate crisis is a pressing issue that is already affecting different regions of
+        the world. Rapid
+        industrialisation and globalisation have led to a dramatic increase in global energy consumption, resulting in
+        the emission of carbon dioxide and other greenhouse gases. The world's reliance on carbon-based fuels is one
+        of the leading causes of the increasing carbon dioxide emissions, making it one of the major global issues
+        today.
+      </p>
+    </div>
+
+    <div data-anchor="globeVis" class="" id="globeCtn">
       <div class="globe_des left">
         <div class="left_info">
           <h1 class="uk-heading-medium" id="currentYear" data-aos="fade-right" data-aos-delay="600"
@@ -135,271 +148,202 @@
           </button>
         </div>
       </div>
-      <div id="globeGl" data-aos="zoom-in" data-aos-duration="600"></div>
+
+      <div id="globeGl"></div>
+
       <div class="globe_des right" data-aos="fade-left" data-aos-delay="600" data-aos-duration="600">
         <div id="verticalSlider" uk-tooltip="title: Move the slider handle!; offset: 30"></div>
       </div>
     </div>
 
-    <div id="modal" uk-modal>
-      <div class="uk-modal-dialog uk-margin-auto-vertical uk-modal-body uk-card uk-card-secondary uk-card-body card">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <h3 class="uk-card-title" style="margin-bottom: 30px;"><span uk-icon="icon: warning; ratio: 1.25;"
-            style="margin-right: 12px;"></span>Climate
-          Change</h3>
-        <p>
-          The climate crisis is a pressing issue that is already affecting different regions of the world. Rapid
-          industrialization and globalization have led to a dramatic increase in global energy consumption, resulting in
-          the emission of carbon dioxide and other greenhouse gases. The world's reliance on carbon-based fuels is one
-          of the leading causes of the increasing carbon dioxide emissions, making it one of the major global issues
-          today.
-        </p>
+    <!-- <div uk-alert id="alert"><span uk-icon="icon: world" class="icons"></span>Drag and hover to view details of each nations <a class="uk-alert-close" uk-close></a></div> -->
+
+    <div class="text_box">
+      <h1 class="uk-article-title">🌎 Net Zero 2050</h1>
+      <p>The 26th Conference of Parties (COP) in Glasgow in 2021 saw member states of the United Nations (UN)
+        reaffirm their commitment to the 2015 Paris Agreement to limit the global average temperature rise to be
+        well below 2°C compared to pre-industrialization levels. To achieve this, many countries around the world
+        have committed to the <strong>Net Zero 2050</strong> plan, which aims to...</p>
+    </div>
+
+    <div class="uk-background-cover" uk-img data-src="assets/img/un_climate.png" style="height: 600px;">
+      <div class="quote_box" style="display: flex; height: 100%; margin-top: 0!important;">
+        <h2 class="quote" style="color: white;">
+          Achieve an overall balance between greenhouse gas (GHG) emissions produced and emissions taken out of the
+          atmosphere
+        </h2>
       </div>
     </div>
 
-    <div class="page" data-anchor="netZero">
-      <div class="uk-background-cover full_page" uk-img data-src="assets/img/un_climate.png" data-aos="zoom-out"
-        data-aos-duration="800"></div>
-      <div class="overlay" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="600"
-        data-aos-delay="600">
-        <article class="uk-article text_over">
-          <h1 class="uk-article-title">🌎 Net Zero 2050</h1>
-          <p>The 26th Conference of Parties (COP) in Glasgow in 2021 saw member states of the United Nations (UN)
-            reaffirm their commitment to the 2015 Paris Agreement to limit the global average temperature rise to be
-            well below 2°C compared to pre-industrialization levels. To achieve this, many countries around the world
-            have committed to the <strong>Net Zero 2050</strong> plan, which aims to</p>
-
-          <p class="uk-text-lead">
-            achieve an overall balance between greenhouse gas (GHG) emissions produced and emissions taken out of the
-            atmosphere.
-          </p>
-        </article>
+    <div class="text_box">
+      <h1 class="uk-article-title">🇰🇷 South Korea's Carbon Neutrality scenario</h1>
+      <p class="uk-text">In
+        October 2020, the South Korean government announced their 2050 Carbon Neutrality
+        scenario, which includes reducing GHG emissions by 40% compared to 2018 by the end of 2030. Achieving
+        this is a highly challenging task since it requires a reduction in GHG emissions from 728 million tons
+        in 2018 to 436.6 million tons within the next eight years.
+      </p>
+      <div id="viz_kr" class="viz_charts">
       </div>
     </div>
 
-    <div class="page" data-anchor="carbonNeutrality">
-      <div class="img_txt">
-        <div class="uk-background-cover img" uk-img data-src="assets/img/skorea_2050.jpg" data-aos="fade-right"
-          data-aos-easing="ease-in-out" data-aos-duration="800">
-        </div>
-        <div class="txt_container">
-          <div class="uk-container">
-            <article class="uk-article">
-              <h1 class="uk-article-title" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800"
-                data-aos-delay="400">🇰🇷 South Korea's <br> Carbon Neutrality scenario</h1>
-              <p class="uk-text" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800"
-                data-aos-delay="600">In October 2020, the South Korean government announced their 2050 Carbon Neutrality
-                scenario, which includes reducing GHG emissions by 40% compared to 2018 by the end of 2030. Achieving
-                this is a highly challenging task since it requires a reduction in GHG emissions from 728 million tons
-                in 2018 to 436.6 million tons within the next eight years.
-              </p>
-              <div id="viz_kr" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="800"
-                data-aos-delay="800">
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page" data-anchor="quote">
-      <div class="boxquote" data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="1000"
-        data-aos-delay="800">
-        <p class="uk-text-lead uk-text-center" style="margin-bottom: 0; color: whitesmoke !important;"> However, despite
+    <div class="uk-background-cover" uk-img data-src="assets/img/sk_gov.jpeg" style="height: 600px;">
+      <div class="quote_box" style="display: flex; height: 100%; ">
+        <h3 class="quote" style="color: white;">
+          However, despite
           this challenging goal, the
-          South Korean government is still maintaining its stance on <strong>phasing out from nuclear power
+          South Korean government is still maintaining its stance on <strong
+            style="color: rgba(252, 163, 17, 1);">phasing out from nuclear power
             plants</strong>.
-        </p>
-      </div>
-      <div class="uk-background-cover full_page" uk-img data-src="assets/img/sk_gov.jpeg" data-aos="zoom-out"
-        data-aos-easing="ease-in-out" data-aos-duration="1000">
+        </h3>
       </div>
     </div>
 
-    <div class="page uk-background-cover" data-anchor="nuclearEnergy" uk-img data-src="assets/img/nuclear power plant stock.jpg">
-      <h1 class="uk-text-bold heading uk-transform-center">Why Nuclear Energy is crucial in achieving Carbon Neutrality
+    <div class="quote_box" style="margin-top: 300px;">
+      <h1 class="quote" style="font-size: 64px; ">Why is Nuclear Energy so crucial in achieving Carbon Neutrality?
       </h1>
     </div>
 
-    <div class="page" data-anchor="nuclearEnergy">
-      <div class="slide">
-        <div class="full_page" data-anchor="eco">
-          <div class="section uk-child-width-expand@s uk-grid-large" uk-grid>
-            <div>
-              <div class="uk-card uk-card-body uk-card-default uk-card-hover">
-                <article class="uk-article textBox">
-                  <p class="uk-text-lead uk-card-title"><span uk-icon="icon: info; ratio: 1"
-                      style="margin-right: 12px;"></span>Nuclear Power is one of the most environmentally friendly
-                    energy
-                    sources available.</p>
-                  <p>Nuclear power produces energy via nuclear fission of Uranium, generating base-load electricity with
-                    no
-                    carbon output. The only GHG emissions from nuclear power generation come from the ancillary use of
-                    fossil fuels during processes including construction, fuel processing, and maintenance of the
-                    nuclear
-                    power plants. This GHG emission is still a relatively small amount compared to low-carbon/renewable
-                    energy sources.
-                  </p>
-                </article>
-              </div>
-            </div>
-
-            <div>
-              <div class="chartBox uk-card uk-card-body uk-card-default">
-                <div id="viz_env" class="viz_charts">
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="full_page" data-anchor="eff">
-          <div class="section uk-child-width-expand uk-grid-large" uk-grid>
-            <div>
-              <div class="uk-card uk-card-body uk-card-default uk-card-hover">
-                <article class="uk-article textBox">
-                  <p class="uk-text-lead sec-title"><span uk-icon="icon: info; ratio: 1"
-                      style="margin-right: 12px;"></span>Nuclear
-                    Power is highly effective and reliable compared to other energy sources.</p>
-                  <p>Nuclear power has a high capacity factor of approximately 93%, which means it operates at its
-                    maximum
-                    capacity of 93% of the time it's operating. Nuclear power is almost twice as reliable as current
-                    carbon-based energy plants of coal and gas, and 2.5 - 3.5 times more reliable than renewable energy
-                    plants. Nuclear power is highly effective and reliable compared to other renewable energy sources.
-                  </p>
-                </article>
-              </div>
-            </div>
-            <div>
-              <div class="chartBox uk-card uk-card-body uk-card-default">
-                <div id="viz_eff" class="viz_charts">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="full_page" data-anchor="infra">
-          <div class="section uk-child-width-expand uk-grid-large" uk-grid>
-            <div>
-              <div class="uk-card uk-card-body uk-card-default uk-card-hover">
-                <article class="uk-article textBox">
-                  <p class="uk-text-lead sec-title"><span uk-icon="icon: info; ratio: 1"
-                      style="margin-right: 12px;"></span>Nuclear
-                    Power is already producing more energy than any renewable energy sources.</p>
-                  <p>Nuclear power has the highest share in total energy production among low-carbon energy sources.
-                    Since
-                    the first operation of a nuclear power plant in 1986, energy production from nuclear power plants
-                    has
-                    been constantly increasing, taking up approximately 12% of the total energy production in South
-                    Korea.
-                    Given the highly challenging aims of South Korea's carbon neutrality plan and the fact that nuclear
-                    power is already producing more energy than any other low-carbon-based energy source, it is
-                    reasonable
-                    to conclude that we should be utilizing more nuclear power for the net-zero plan rather than phasing
-                    out
-                    from it.
-                  </p>
-                </article>
-              </div>
-            </div>
-            <div>
-              <div class="chartBox uk-card uk-card-body uk-card-default">
-                <div id="viz_inf" class="viz_charts">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="full_page" data-anchor="safe">
-          <div class="section uk-child-width-expand uk-grid-large" uk-grid>
-            <div>
-              <div class="uk-card uk-card-body uk-card-default uk-card-hover">
-                <article class="uk-article textBox">
-                  <p class="uk-text-lead sec-title"><span uk-icon="icon: info; ratio: 1"
-                      style="margin-right: 12px;"></span>Unlike
-                    the
-                    common misconception, Nuclear Power is one of the most safest energy source.</p>
-                  <p>Nuclear power is one of the safest energy sources, despite common misconceptions. It has saved
-                    millions
-                    of lives by replacing energy production from fossil fuels. Even including catastrophic incidents
-                    such
-                    as
-                    Chernobyl and Fukushima, data shows that nuclear power is very close to the safest form of energy
-                    production out of all sources. The death rate from energy production per TWh is 0.07, which is
-                    almost
-                    the same as renewable energy sources such as wind or solar.
-                  </p>
-                  <p>Moreover, nuclear power releases less radiation into the environment than any other major energy
-                    source. For example, coal produces a material called fly ash when it's burnt, releasing nearly 100
-                    times
-                    more radiation into the environment than a nuclear power plant for the same amount of energy
-                    production.
-                  </p>
-                </article>
-              </div>
-            </div>
-
-            <div>
-              <div class="chartBox uk-card uk-card-body uk-card-default">
-                <div id="viz_sft" class="viz_charts">
-                </div>
-              </div>
-            </div>
-
-            <p class="chart_des">The above is a scatter plot visualising each energy source by the death rate from
-              energy
-              production
-              and the current energy production. Excluding the carbon-based energy sources, nuclear energy locates at
-              bottom
-              right of the chart, meaning it's producing the high amount of energy without causing a lot of damage to
-              people.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page" data-anchor="eval">
-      <div class="uk-card uk-card-body">
-        <article class="uk-article textBox">
-          <h1 class="uk-article-title" style="font-size: 36px;">Evaluating Low-carbon Energy sources</h1>
-          <p>Nuclear power is clearly an advantageous energy source compared to other low-carbon/renewable energy
-            sources.
-            Below is a radar chart comparing the 4 low-carbon energy sources (Nuclear, Hydropower, Solar and Wind) by 5
-            criteria: <strong>Safeness</strong> (Death rate per TWh), <strong>Cost</strong>,
-            <strong>Cleanliness</strong>
-            (GHG emission), <strong>Development status</strong> (current share in
-            energy production) and <strong>Reliability</strong> (capacity factor). Each energy source was given points
-            out
-            of 5 on each
-            criteria, by standardising the corresponding data of all energy sources and converting it into a scale of 1
-            -
-            5.
-            From the chart, nuclear power covers relatively high points all-around in 5 criteria.
-          </p>
-        </article>
-        <div id="viz_rad" class="viz_charts">
-        </div>
-      </div>
-    </div>
-
-    <div class="page" data-anchor="conc">
+    <div class="chart_box">
       <article class="uk-article textBox">
-        <h1 class="uk-article-title" style="font-size: 36px;">Conclusion</h1>
-        <p>Nuclear power isn't the only solution to achieve the carbon neutrality and it's definitely
+        <h3 class="uk-article-title" style="margin-bottom: 50px;"><span uk-icon="icon: info; ratio: 2"
+            style="margin-right: 12px;"></span>Nuclear Power is one of the most environmentally friendly
+          energy
+          sources available.</h3>
+        <p>Nuclear power produces energy via nuclear fission of Uranium, generating base-load electricity with
+          no
+          carbon output. The only GHG emissions from nuclear power generation come from the ancillary use of
+          fossil fuels during processes including construction, fuel processing, and maintenance of the
+          nuclear
+          power plants. This GHG emission is still a relatively small amount compared to low-carbon/renewable
+          energy sources.
+        </p>
+      </article>
+      <div class="chart_container">
+        <div id="viz_env" class="viz_charts">
+        </div>
+      </div>
+    </div>
+
+    <div class="chart_box">
+      <article class="uk-article textBox">
+        <p class="uk-text-lead sec-title"><span uk-icon="icon: info; ratio: 1"
+            style="margin-right: 12px;"></span>Nuclear
+          Power is highly effective and reliable compared to other energy sources.</p>
+        <p>Nuclear power has a high capacity factor of approximately 93%, which means it operates at its
+          maximum
+          capacity of 93% of the time it's operating. Nuclear power is almost twice as reliable as current
+          carbon-based energy plants of coal and gas, and 2.5 - 3.5 times more reliable than renewable energy
+          plants. Nuclear power is highly effective and reliable compared to other renewable energy sources.
+        </p>
+      </article>
+
+      <div class="chart_container">
+        <div id="viz_eff" class="viz_charts">
+        </div>
+      </div>
+    </div>
+
+    <div class="chart_box">
+      <article class="uk-article textBox">
+        <p class="uk-text-lead sec-title"><span uk-icon="icon: info; ratio: 1"
+            style="margin-right: 12px;"></span>Nuclear
+          Power is already producing more energy than any renewable energy sources.</p>
+        <p>Nuclear power has the highest share in total energy production among low-carbon energy sources.
+          Since
+          the first operation of a nuclear power plant in 1986, energy production from nuclear power plants
           has
-          it's downside being a non-renewable source of energy. However to achieve carbon neutrality by 2050, it is
-          inevitable to utilise nuclear energy until the technology for renewable energy
-          production is further developed and commercialised.</p>
+          been constantly increasing, taking up approximately 12% of the total energy production in South
+          Korea.
+          Given the highly challenging aims of South Korea's carbon neutrality plan and the fact that nuclear
+          power is already producing more energy than any other low-carbon-based energy source, it is
+          reasonable
+          to conclude that we should be utilizing more nuclear power for the net-zero plan rather than phasing
+          out
+          from it.
+        </p>
+      </article>
+      <div class="chart_container">
+        <div id="viz_inf" class="viz_charts">
+        </div>
+      </div>
+    </div>
+
+    <div class="chart_box">
+      <article class="uk-article textBox">
+        <p class="uk-text-lead sec-title"><span uk-icon="icon: info; ratio: 1" style="margin-right: 12px;"></span>Unlike
+          the
+          common misconception, Nuclear Power is one of the most safest energy source.</p>
+        <p>Nuclear power is one of the safest energy sources, despite common misconceptions. It has saved
+          millions
+          of lives by replacing energy production from fossil fuels. Even including catastrophic incidents
+          such
+          as
+          Chernobyl and Fukushima, data shows that nuclear power is very close to the safest form of energy
+          production out of all sources. The death rate from energy production per TWh is 0.07, which is
+          almost
+          the same as renewable energy sources such as wind or solar.
+        </p>
+        <p>Moreover, nuclear power releases less radiation into the environment than any other major energy
+          source. For example, coal produces a material called fly ash when it's burnt, releasing nearly 100
+          times
+          more radiation into the environment than a nuclear power plant for the same amount of energy
+          production.
+        </p>
+      </article>
+
+      <div class="chart_container" style="margin-top: 100px;">
+        <div id="viz_sft" class="viz_charts">
+        </div>
+      </div>
+
+      <p class="chart_des">The above is a bubble chart visualising each energy source by the death rate from
+        energy
+        production
+        and the GHG emission. The size of each bubbles indicate its current share in energy production in South Korea.
+        Nuclear energy locates at the bottom left of the chart while having the third biggest size out of all energy
+        sources, meaning it is producing more enegy while being one of the safest enegy sources available.
+      </p>
+    </div>
+
+    <div class="text_box" data-anchor="eval">
+      <article>
+        <h1 class="uk-article-title" style="font-size: 36px;">Evaluating Low-carbon Energy sources</h1>
+        <p>Nuclear power is clearly an advantageous energy source compared to other low-carbon/renewable energy
+          sources.
+          Below is a radar chart comparing the 4 low-carbon energy sources (Nuclear, Hydropower, Solar and Wind) by
+          5
+          criteria: <strong>Safeness</strong> (Death rate per TWh), <strong>Cost</strong>,
+          <strong>Cleanliness</strong>
+          (GHG emission), <strong>Development status</strong> (current share in
+          energy production) and <strong>Reliability</strong> (capacity factor). Each energy source was given points
+          out
+          of 5 on each
+          criteria, by standardising the corresponding data of all energy sources and converting it into a scale of
+          1
+          -
+          5.
+          From the chart, nuclear power covers relatively high points all-around in 5 criteria.
+        </p>
+      </article>
+
+      <div id="viz_rad" class="viz_charts" style="margin-top: 100px;">
+      </div>
+    </div>
+
+    <div class="text_box">
+        <article class="uk-article textBox">
+          <h1 style="font-size: 64px;">So, what's the conclusion?</h1>
+          <p style="margin-top: 100px;">Nuclear power isn't the only solution to achieve the carbon neutrality and it's
+            definitely
+            has
+            it's downside being a non-renewable source of energy. However to achieve carbon neutrality by 2050, it is
+            inevitable to utilise nuclear energy until the technology for renewable energy
+            production is further developed and commercialised. Whilst there are yet to be solved issues regarding
+            nuclear energy, such as waste disposal, nuclear energy deserves a lot better than the anti-nuclear
+            prejudices and fears that have plagued in. It's valuable, irreplaceable, and a critical part of solution to
+            the greatest energy threat in the history of humankind.</p>
+          </article>
     </div>
 
     <footer class="page fp-auto-height" id="footer">
@@ -409,22 +353,20 @@
           <p>Lorem ipsum <a href="#">link</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut
             labore et dolore magna aliqua.</p>
-          <p class="uk-text-small" style="margin-top: auto;">copyright(c).</p>
         </div>
         <div class="uk-padding">
           <h3 class="uk-card-title uk-light">Community</h3>
           <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut
             labore et dolore magna aliqua.</p>
-          <p class="uk-text-small" style="margin-top: auto;">copyright(c).</p>
         </div>
         <div class="uk-padding">
           <h3 class="uk-card-title uk-light">Support</h3>
           <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut
             labore et dolore magna aliqua.</p>
-          <p class="uk-text-small" style="margin-top: auto;">copyright(c).</p>
         </div>
+        <p class="uk-text-small" style="margin-left: auto;">Leo Park copyright(c).</p>
       </div>
     </footer>
 
