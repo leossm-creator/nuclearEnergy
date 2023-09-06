@@ -39,7 +39,7 @@ const initGlobe = async () => {
     .polygonsTransitionDuration(300);
 
   // Auto-rotate
-  world.controls().autoRotate = false;
+  world.controls().autoRotate = true;
   world.controls().autoRotateSpeed = 0.6;
   world.controls().enableZoom = false;
   world.width(window.innerWidth);
